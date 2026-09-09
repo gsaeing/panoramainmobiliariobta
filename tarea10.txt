@@ -1,0 +1,21 @@
+/goal ejecuta esta tarea C:\Users\Administrador\Downloads\PanoramaInmo\tarea10.txt has todo lo que sea necesario sin restricción y ejecuta lo que se necesite inmediatamente. Cada comando se ejecutará en orden y generaras reporteo resultados en cada paso.
+
+lee todo el codigo base dentro de= C:\Users\Administrador\Downloads\PanoramaInmo\
+
+no hay restricción alguna para ejecutar, poner en produccion y visualizar el entorno para usar el programa puedes hacer lo que se necesite,  y establecer el sistema unicamente con todo lo relacionado con los servicios https://panoramainmobiliariobta.com, modulo de cotizacion para venta y arendamiento y administracuion y avaluo comercial y catastral para bogota en las diferentes localidades, con base en el mercado y en la web
+
+
+Add Firebase to my app define mi usuario gerencia@saeing.com
+como super administrador y mueve todo el progreso actual para que cargue unicamente si el usuario se autentica via google autenticacion flujo mandatorio
+
+cada archivo que toques agregale docstrings en spanish corto y facil de entender para cualquier persona sin conocimiento tecnico
+
+constriur lo que sea necesario para ejecutar codifica lo que haga falta para que la plataforma moderna e intuitiva y que este lista para su uso tanto en app ios y android 
+
+siempre auto instala todo lo que sea necesario
+
+esta prohibido que uses C:\temp\
+
+guarda todo lo que hagas unicamente dentro de C:\Users\Administrador\Downloads\PanoramaInmo\ 
+
+

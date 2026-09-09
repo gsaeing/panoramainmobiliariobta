@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- Pantalla principal Panorama. Explica: aqui se entra con Google y luego se cotiza. -->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Panorama Inmobiliario Bogotá</title>
+<meta name="description" content="Cotiza venta, arriendo, administración y avalúos en Bogotá por localidad.">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0b3d2e">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="styles.css">
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="firebase-config.js"></script>
+</head>
+<body>
+<!-- Entrada con Google: tapa todo hasta entrar. -->
+<div id="pantalla-login" class="login">
+  <div class="tarjeta-login">
+    <h1>🏙️ Panorama Inmobiliario</h1>
+    <p>Bogotá · Venta · Arriendo · Administración · Avalúos</p>
+    <p class="nota">Debes entrar con Google para usar la plataforma.</p>
+    <button id="btn-google">Entrar con Google</button>
+    <p id="msg-login" class="nota"></p>
+    <p class="nota">Jefe (super admin): gerencia@saeing.com<br>Contacto: +57 301 625 0244 · panoramainmobiliariobta.com</p>
+  </div>
+</div>
+
+<!-- App real: escondida hasta el login. -->
+<div id="app" style="display:none">
+<header>
+  <div><strong>Panorama</strong> Bogotá <span id="quien" class="pastilla"></span></div>
+  <button id="btn-salir">Salir</button>
+</header>
+<nav>
+  <button data-tab="venta" class="activo">Venta</button>
+  <button data-tab="arriendo">Arriendo</button>
+  <button data-tab="admin">Administración</button>
+  <button data-tab="avaluo">Avalúo</button>
+  <button data-tab="direccion">Avalúo por dirección</button>
+  <button data-tab="mercado">Mercado</button>
+</nav>
+<main>
+  <section id="tab-venta" class="tab activo">
+    <h2>Cotizar venta</h2>
+    <p class="nota">Escribe localidad, barrio y metros. Te damos precio de oferta y de cierre.</p>
+    <input id="v-localidad" placeholder="Localidad ej: Usaquén">
+    <input id="v-barrio" placeholder="Barrio ej: Chicó Norte">
+    <input id="v-area" type="number" value="80" placeholder="Área m2">
+    <input id="v-antig" type="number" value="5" placeholder="Antigüedad años">
+    <label><input id="v-parq" type="checkbox" checked> Tiene parqueadero</label>
+    <button onclick="cotizarVenta()">Calcular venta</button>
+    <pre id="v-salida"></pre>
+  </section>
+  <section id="tab-arriendo" class="tab">
+    <h2>Cotizar arriendo</h2>
+    <input id="a-localidad" placeholder="Localidad ej: Chapinero">
+    <input id="a-barrio" placeholder="Barrio ej: Rosales">
+    <input id="a-area" type="number" value="70">
+    <label><input id="a-amob" type="checkbox"> Amoblado (+25%)</label>
+    <button onclick="cotizarArriendo()">Calcular arriendo</button>
+    <pre id="a-salida"></pre>
+  </section>
+  <section id="tab-admin" class="tab">
+    <h2>Administración</h2>
+    <input id="d-canon" type="number" value="2500000" placeholder="Canon mensual">
+    <button onclick="cotizarAdmin()">Calcular administración (10%)</button>
+    <pre id="d-salida"></pre>
+  </section>
+  <section id="tab-avaluo" class="tab">
+    <h2>Avalúo comercial y catastral</h2>
+    <input id="c-localidad" placeholder="Localidad ej: Suba">
+    <input id="c-barrio" placeholder="Barrio ej: Niza">
+    <input id="c-area" type="number" value="80">
+    <input id="c-antig" type="number" value="8">
+    <button onclick="pedirAvaluo()">Pedir avalúo</button>
+    <pre id="c-salida"></pre>
+  </section>
+  <section id="tab-direccion" class="tab">
+    <h2>Avalúo comercial por dirección</h2>
+    <p class="nota">Escribe la dirección exacta y te damos valor comercial, catastral y comparables del sector.</p>
+    <input id="x-direccion" placeholder="Ej: Calle 93 # 11-25, Chicó, Bogotá">
+    <input id="x-area" type="number" value="80" placeholder="Área m2">
+    <input id="x-antig" type="number" value="8" placeholder="Antigüedad años">
+    <label><input id="x-parq" type="checkbox" checked> Tiene parqueadero</label>
+    <button onclick="pedirAvaluoDireccion()">Generar avalúo por dirección</button>
+    <pre id="x-salida"></pre>
+  </section>
+  <section id="tab-mercado" class="tab">
+    <h2>Mercado Bogotá 2026</h2>
+    <button onclick="verMercado()">Ver precios por localidad</button>
+    <pre id="m-salida"></pre>
+  </section>
+</main>
+<footer>Panorama · Lun-Vie 08:00-18:00 · WhatsApp 301 625 0244</footer>
+</div>
+<script src="app.js"></script>
+<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js');}</script>
+</body>
+</html>

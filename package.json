@@ -1,0 +1,16 @@
+{
+  "name": "panorama-inmobiliario-bta",
+  "version": "1.0.0",
+  "description": "Plataforma Panorama Inmobiliario Bogota: cotizacion venta/arriendo, administracion y avaluos por localidad.",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "start:http": "node backend/server.js --http-only"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "selfsigned": "^2.1.1",
+    "firebase-admin": "^12.7.0"
+  }
+}

@@ -1,0 +1,4 @@
+# Reglas para Google. Explica: deja entrar a todo y muestra el mapa del sitio.
+User-agent: *
+Allow: /
+Sitemap: https://panoramainmobiliariobta.com/sitemap.xml

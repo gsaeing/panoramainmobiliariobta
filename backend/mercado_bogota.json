@@ -1,0 +1,61 @@
+{
+  "_doc": "Datos de mercado Bogota 2026. Explica: precios por m2 de venta y arriendo por localidad. Fuente: Lonja, Habi, portales. Sirve para cotizar sin internet.",
+  "ciudad": "Bogotá D.C.",
+  "anio": 2026,
+  "promedioCiudadM2Venta": 6300000,
+  "promedioCiudadM2Arriendo": 47821,
+  "descuentoOfertaVsCierrePct": { "min": 6, "max": 11 },
+  "factorCatastralSobreComercial": 0.65,
+  "costoAvaluoResidencial": { "min": 350000, "max": 900000 },
+  "comisiones": {
+    "ventaPct": 3.0,
+    "arriendoColocacionC Canon": 1.0,
+    "administracionMensualPct": 10.0,
+    "seguroArriendoPctCanon": 3.5
+  },
+  "localidades": [
+    { "nombre": "Usaquén", "m2VentaMedio": 7382727, "m2ArriendoMedio": 48000, "estratoRef": "4-6", "demanda": "muy alta" },
+    { "nombre": "Chapinero", "m2VentaMedio": 9068935, "m2ArriendoMedio": 55000, "estratoRef": "4-6", "demanda": "muy alta" },
+    { "nombre": "Santa Fe", "m2VentaMedio": 5769230, "m2ArriendoMedio": 38000, "estratoRef": "3-5", "demanda": "media" },
+    { "nombre": "San Cristóbal", "m2VentaMedio": 3400000, "m2ArriendoMedio": 22000, "estratoRef": "2-3", "demanda": "media-baja" },
+    { "nombre": "Usme", "m2VentaMedio": 3200000, "m2ArriendoMedio": 20000, "estratoRef": "1-3", "demanda": "baja" },
+    { "nombre": "Tunjuelito", "m2VentaMedio": 3600000, "m2ArriendoMedio": 23000, "estratoRef": "2-3", "demanda": "media" },
+    { "nombre": "Bosa", "m2VentaMedio": 3500000, "m2ArriendoMedio": 22000, "estratoRef": "2-3", "demanda": "media" },
+    { "nombre": "Kennedy", "m2VentaMedio": 5160855, "m2ArriendoMedio": 28000, "estratoRef": "2-4", "demanda": "alta" },
+    { "nombre": "Fontibón", "m2VentaMedio": 4800000, "m2ArriendoMedio": 27000, "estratoRef": "3-4", "demanda": "alta" },
+    { "nombre": "Engativá", "m2VentaMedio": 5270544, "m2ArriendoMedio": 30000, "estratoRef": "3-4", "demanda": "muy alta" },
+    { "nombre": "Suba", "m2VentaMedio": 6410341, "m2ArriendoMedio": 35000, "estratoRef": "3-5", "demanda": "muy alta" },
+    { "nombre": "Barrios Unidos", "m2VentaMedio": 4600000, "m2ArriendoMedio": 28000, "estratoRef": "3-4", "demanda": "media" },
+    { "nombre": "Teusaquillo", "m2VentaMedio": 5322580, "m2ArriendoMedio": 32000, "estratoRef": "4-5", "demanda": "alta" },
+    { "nombre": "Los Mártires", "m2VentaMedio": 4200000, "m2ArriendoMedio": 26000, "estratoRef": "3-4", "demanda": "media" },
+    { "nombre": "Antonio Nariño", "m2VentaMedio": 4000000, "m2ArriendoMedio": 25000, "estratoRef": "3-4", "demanda": "media" },
+    { "nombre": "Puente Aranda", "m2VentaMedio": 4500000, "m2ArriendoMedio": 27000, "estratoRef": "3-4", "demanda": "media" },
+    { "nombre": "La Candelaria", "m2VentaMedio": 3800000, "m2ArriendoMedio": 22000, "estratoRef": "2-4", "demanda": "media turistica" },
+    { "nombre": "Rafael Uribe Uribe", "m2VentaMedio": 3600000, "m2ArriendoMedio": 23000, "estratoRef": "2-3", "demanda": "media" },
+    { "nombre": "Ciudad Bolívar", "m2VentaMedio": 3100000, "m2ArriendoMedio": 19000, "estratoRef": "1-2", "demanda": "baja" },
+    { "nombre": "Sumapaz", "m2VentaMedio": 1500000, "m2ArriendoMedio": 10000, "estratoRef": "1-2 rural", "demanda": "baja" }
+  ],
+  "barriosPremium": [
+    { "nombre": "El Nogal (Chapinero)", "m2VentaMin": 12500000, "m2VentaMax": 15200000, "m2ArriendoMin": 55000, "m2ArriendoMax": 72000 },
+    { "nombre": "Rosales (Chapinero)", "m2VentaMin": 11800000, "m2VentaMax": 14500000, "m2ArriendoMin": 52000, "m2ArriendoMax": 68000 },
+    { "nombre": "Chicó Norte (Usaquén/Chapinero)", "m2VentaMin": 10200000, "m2VentaMax": 13000000, "m2ArriendoMin": 45000, "m2ArriendoMax": 60000 },
+    { "nombre": "La Cabrera / El Retiro", "m2VentaMin": 11000000, "m2VentaMax": 16000000, "m2ArriendoMin": 60000, "m2ArriendoMax": 83000 },
+    { "nombre": "Santa Bárbara (Usaquén)", "m2VentaMin": 9800000, "m2VentaMax": 12800000, "m2ArriendoMin": 44000, "m2ArriendoMax": 62000 },
+    { "nombre": "Chapinero Alto", "m2VentaMin": 7800000, "m2VentaMax": 10500000, "m2ArriendoMin": 35000, "m2ArriendoMax": 48000 },
+    { "nombre": "Cedritos (Usaquén)", "m2VentaMin": 5900000, "m2VentaMax": 8200000, "m2ArriendoMin": 28000, "m2ArriendoMax": 38000 },
+    { "nombre": "Niza (Suba)", "m2VentaMin": 5400000, "m2VentaMax": 7600000, "m2ArriendoMin": 25000, "m2ArriendoMax": 35000 },
+    { "nombre": "Quinta Camacho", "m2VentaMin": 9000000, "m2VentaMax": 11500000, "m2ArriendoMin": 40000, "m2ArriendoMax": 55000 },
+    { "nombre": "Modelia / Normandía (Fontibón)", "m2VentaMin": 4500000, "m2VentaMax": 5800000, "m2ArriendoMin": 22000, "m2ArriendoMax": 31000 }
+  ],
+  "ajustes": {
+    "antiguedad": { "0-5": 1.0, "6-10": 0.96, "11-20": 0.90, "21-30": 0.84, "30+": 0.78 },
+    "sinParqueadero": 0.90,
+    "nota": "Sin parqueadero pierde 8-12% del valor."
+  },
+  "contactoPanorama": {
+    "web": "https://panoramainmobiliariobta.com",
+    "whatsapp": "+57 301 625 0244",
+    "email": "panoramainmobiliario1@gmail.com",
+    "horario": "Lun-Vie 08:00-18:00, Sab 09:00-13:00"
+  }
+}

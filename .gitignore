@@ -1,0 +1,8 @@
+# Ignorados Panorama. Explica: no se suben claves, programas instalados ni reportes locales.
+node_modules/
+certs/*.pem
+certs/llave.pem
+certs/certificado.pem
+server.log
+server.log.err
+backend/reportes/
