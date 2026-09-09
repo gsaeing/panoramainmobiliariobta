@@ -1,0 +1,7 @@
+{
+  "name": "Panorama Inmobiliario Bogotá",
+  "description": "Plataforma interactiva de inteligencia de mercado inmobiliario en Bogotá: precios por m², estratos, rentabilidad por zonas, proyectos y simulador de inversión.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

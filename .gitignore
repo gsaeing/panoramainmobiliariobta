@@ -1,8 +1,15 @@
 # Ignorados Panorama. Explica: no se suben claves, programas instalados ni reportes locales.
 node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+server.log
+server.log.err
+.env*
+!.env.example
 certs/*.pem
 certs/llave.pem
 certs/certificado.pem
-server.log
-server.log.err
 backend/reportes/
