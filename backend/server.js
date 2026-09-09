@@ -153,6 +153,11 @@ function inferirZonaPorDireccion(direccion) {
     return pal.some(w => t.includes(w));
   }) || null;
   let loc = mercado.localidades.find(l => t.includes(sinTildes(l.nombre))) || null;
+  if (!loc && barrio) {
+    // Explica: si el barrio dice la localidad entre paréntesis, se usa esa.
+    const m = (barrio.nombre || '').match(/\(([^)]+)\)/);
+    if (m) loc = buscarLocalidad(m[1].split('/')[0]) || null;
+  }
   // Extrae números de calle y carrera: "calle 93", "cra 11", "cll 127".
   const mCalle = t.match(/(?:calle|cll?|cl)\s*\.?\s*(\d+)/);
   const mCra = t.match(/(?:carrera|cra?|kr|av|carrera)\s*\.?\s*(\d+)/);
