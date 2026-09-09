@@ -1,5 +1,5 @@
 import React from 'react';
-import { Building2, Sparkles, MapPin, Calculator, BarChart3, Scale, Layers, Compass } from 'lucide-react';
+import { Building2, Sparkles, MapPin, Calculator, BarChart3, Scale, Layers, Compass, KeyRound } from 'lucide-react';
 
 interface NavbarProps {
   activeTab: string;
@@ -15,6 +15,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, setActiveTab, onOpenA
     { id: 'propiedades', label: 'Oportunidades', icon: Layers },
     { id: 'simulador', label: 'Calculadora ROI', icon: Calculator },
     { id: 'comparador', label: 'Comparador', icon: Scale },
+    { id: 'administracion', label: 'Administración', icon: KeyRound, isSpecial: true },
   ];
 
   return (

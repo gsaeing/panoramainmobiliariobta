@@ -12,6 +12,7 @@ import { AiAdvisorDrawer } from './components/AiAdvisorDrawer';
 import { ZoneDetailModal } from './components/ZoneDetailModal';
 import { PropertyDetailModal } from './components/PropertyDetailModal';
 import { NorthBogotaSpecialty } from './components/NorthBogotaSpecialty';
+import { AdministracionBogotaSabana } from './components/AdministracionBogotaSabana';
 import { Building2, Sparkles, MapPin, Calculator, ShieldCheck, Scale, ArrowUpRight, Compass } from 'lucide-react';
 
 export default function App() {
@@ -256,6 +257,13 @@ export default function App() {
             />
           </div>
         )}
+
+        {/* Tab 6: Administración Bogotá y Sabana (SEO) */}
+        {activeTab === 'administracion' && (
+          <div className="space-y-6 animate-in fade-in duration-300">
+            <AdministracionBogotaSabana />
+          </div>
+        )}
       </main>
 
       {/* Modals & Drawers */}
@@ -302,6 +310,15 @@ export default function App() {
           <p className="text-center md:text-right text-[11px] text-slate-500 max-w-xl">
             Modelos de referencia basados en datos estadísticos de DANE, Galería Inmobiliaria, Catastro Distrital y Lonja de Bogotá. Cálculos de crédito y leasing ajustados a fórmulas del sistema financiero colombiano.
           </p>
+        </div>
+        {/* Contacto y zonas para SEO local */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 flex flex-col md:flex-row items-center justify-between gap-3 text-[11px] text-slate-500">
+          <p className="text-center md:text-left">
+            Administración de inmuebles en Bogotá y Sabana: Chicó, Usaquén, Chapinero, Cedritos, Suba, Chía, Cajicá, La Calera, Zipaquirá, Mosquera, Funza, Madrid, Soacha. WhatsApp 301 625 0244 · Lun–Vie 08:00–18:00.
+          </p>
+          <button onClick={() => setActiveTab('administracion')} className="text-amber-400 hover:text-amber-300 font-semibold whitespace-nowrap cursor-pointer">
+            Poner mi inmueble en administración →
+          </button>
         </div>
       </footer>
     </div>
